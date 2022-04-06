@@ -6,6 +6,21 @@
   height: 40vmin;
   pointer-events: none;
 }
+.button{
+  position:relative;
+  margin-top: 20px;
+  height: 50px;
+  width:100px;
+  border-radius: 20px;
+  background-color: aqua;
+  cursor: pointer;
+
+}
+.button:hover{
+  background-color: white;
+  /* transition-delay:; */
+  color: #61dafb;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
