@@ -7,7 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      monsters: []
+      monsters: [],
+      searchField: ""
 
     };
   }
@@ -20,12 +21,21 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-            <CardList name="Mike"></CardList> 
-        {
-          this.state.monsters.map(monsters => (<h1 key={monsters.id}>{monsters.name}</h1>)) //Return every elemnt inn the array,
+        <input type="search" placeholder='Search monster'
+          onChange={e => {this.setState({searchField: e.target.value })
+           console.log(this.state)
         }
+        }
+          
+          />
+            <CardList monsters={this.state.monsters}>
+            </CardList>
+
       </div>
+
+
     );
+
   }
 }
 
