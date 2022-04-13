@@ -1,0 +1,21 @@
+
+
+.search{
+    -webkit-appearance: none;
+    border: 1px solid black;
+	border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+    line-height: 30px;
+    margin-bottom: 30px;
+	text-align: center;
+	cursor: pointer;
+	/* margin-top: 20px; */
+	/* background: rgb(174, 209, 142); */
+}
+.search:hover{
+	background: aquamarine;
+	color: rgb(226, 48, 17);
+	box-shadow: 30px;
+}
